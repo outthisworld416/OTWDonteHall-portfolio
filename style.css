@@ -1,0 +1,311 @@
+*{html{
+  scroll-behavior:smooth;
+}
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:black;
+  color:white;
+  font-family:Arial, sans-serif;
+  overflow-x:hidden;
+}body{
+    background:black;
+    display:flex;
+    justify-content:center;
+}
+
+/* NAVBAR */
+
+header
+ header{
+    position: fixed;
+    top: 40;
+    left: 40;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 60px;
+
+    background: black;
+
+    z-index: 1000;
+}
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s ease;
+}
+
+.nav-links a:hover{
+    opacity:0.6;
+}
+
+
+
+.logo img{
+  height:200px;
+  width:auto;
+  object-fit:contain;
+}
+
+
+nav a{ 
+  color:white;
+  text-decoration:none;
+  margin-left:30px;
+  font-size:14px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  opacity:0.5;
+}.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.6;
+}
+
+/* HERO */
+
+.hero{
+  position:relative;
+  height:100vh;
+}
+
+.hero img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.4);
+}
+
+.hero-text{
+  position:absolute;
+  bottom:100px;
+  left:60px;
+  z-index:2;
+}
+
+.hero-text h1{
+  font-size:70px;
+  font-weight:200;
+  letter-spacing:5px;
+}
+
+.hero-text p{
+  margin-top:10px;
+  font-size:18px;
+  opacity:0.8;
+}
+
+/* GALLERY */
+
+.gallery{
+    margin-top:140px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+
+    width:80%;
+    margin:0 auto;
+
+   
+
+    justify-content:center;
+    align-items:center;
+}
+
+
+.item{
+    overflow:hidden;
+    border-radius:20px;
+}
+
+.item img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    display:block;
+    border-radius:20px;
+    transition:0.4s;
+}
+
+.item img:hover{
+    transform:scale(1.03);
+}
+
+@keyframes fadeUp{
+
+  from{
+    opacity:0;
+    transform:translateY(50px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+}/* LIGHTBOX */
+
+.lightbox{
+  position:fixed;
+  top:0;
+  left:0;
+
+  width:100%;
+  height:100%;
+
+  background:rgba(0,0,0,0.95);
+
+  display:none;
+
+  justify-content:center;
+  align-items:center;
+
+  z-index:9999;
+}
+
+.lightbox img{
+  max-width:90%;
+  max-height:90%;
+
+  object-fit:contain;
+
+  animation:zoom 0.3s ease;
+}
+
+.close{
+  position:absolute;
+  top:30px;
+  right:50px;
+
+  color:white;
+  font-size:50px;
+
+  cursor:pointer;
+}
+
+@keyframes zoom{
+
+  from{
+    transform:scale(0.8);
+    opacity:0;
+  }
+
+  to{
+    transform:scale(1);
+    opacity:1;
+  }
+
+}/* ABOUT SECTION */
+
+.about{
+  min-height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:100px 40px;
+
+  background:black;
+}
+
+.about-content{
+  max-width:700px;
+  text-align:center;
+}
+
+.about-content h1{
+  font-size:60px;
+  margin-bottom:20px;
+  letter-spacing:5px;
+}
+
+.about-content p{
+  font-size:20px;
+  line-height:1.8;
+  opacity:0.8;
+
+}.gallery{
+    margin-top: 150px;
+}.video-container{
+    display:flex;
+    justify-content:center;
+    margin-top:150px;
+}
+
+video{
+    width:70%;
+    border-radius:20px;
+}
+.about-text{
+    width: 100%;
+
+
+    padding-left: 220px;
+    padding-right: 220px;
+}.about-text p{
+    font-size: 72px;
+
+    line-height: 1.15;
+
+    letter-spacing: -3px;
+
+    color: white;
+
+    max-width: 1400px;
+}.socials{
+    width: 100%;
+
+    padding: 120px 80px;
+
+    background: black;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 1px solid #222;
+}.socials a{
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    transition: 0.3s;
+}.socials a:hover{
+    opacity: 0.5;
+}.video-section {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.video-section iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
